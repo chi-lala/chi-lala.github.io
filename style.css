@@ -113,6 +113,14 @@ nav a:hover {
     margin-top: 35px;
 }
 
+.hero-label {
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    color: var(--text);
+    margin-bottom: 30px;
+}
+
 
 .primary-button {
     padding: 12px 22px;
@@ -307,6 +315,22 @@ nav a:hover {
 }
 
 
+.project-image {
+    min-height: 420px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    overflow: hidden;
+}
+
+
+.project-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
 /* -------------------------
    SKILLS
 ------------------------- */
@@ -417,10 +441,3 @@ footer {
 
 }
 
-.hero-label {
-    font-size: 0.72rem;
-    font-weight: 500;
-    letter-spacing: 0.16em;
-    color: var(--text);
-    margin-bottom: 30px;
-}
