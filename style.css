@@ -441,3 +441,271 @@ footer {
 
 }
 
+/* =========================================
+   HERO
+   ========================================= */
+
+.hero-wrapper {
+    position: relative;
+    padding: 2rem 4vw 0;
+}
+
+.hero {
+    position: relative;
+    min-height: 78vh;
+
+    background: #dce5dc;
+
+    border-radius: 2rem;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 2rem 3rem 8rem;
+}
+
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
+
+.navbar {
+    position: relative;
+    z-index: 10;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: fit-content;
+
+    margin-top: -0.5rem;
+    padding: 0.75rem 1.25rem;
+
+    background: rgba(247, 245, 239, 0.9);
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+
+    border-radius: 999px;
+
+    box-shadow:
+        0 8px 30px rgba(60, 70, 60, 0.08);
+
+    backdrop-filter: blur(12px);
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.navbar a {
+    color: #354238;
+
+    text-decoration: none;
+
+    font-size: 0.85rem;
+    font-weight: 500;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.navbar a:hover {
+    color: #788f7c;
+    transform: translateY(-1px);
+}
+
+.navbar .nav-resume {
+    padding: 0.55rem 0.9rem;
+
+    background: #354238;
+
+    color: #f7f5ef;
+
+    border-radius: 999px;
+}
+
+.navbar .nav-resume:hover {
+    color: #f7f5ef;
+}
+
+
+/* =========================================
+   HERO CONTENT
+   ========================================= */
+
+.hero-content {
+    position: relative;
+    z-index: 5;
+
+    width: min(850px, 90%);
+
+    margin-top: clamp(6rem, 13vh, 10rem);
+
+    text-align: center;
+}
+
+.hero-label {
+    margin-bottom: 1.5rem;
+
+    font-size: 0.75rem;
+    font-weight: 500;
+
+    letter-spacing: 0.16em;
+
+    color: #5f7564;
+}
+
+.hero h1 {
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(3.5rem, 8vw, 7rem);
+
+    font-weight: 400;
+
+    line-height: 0.98;
+
+    letter-spacing: -0.04em;
+
+    color: #354238;
+}
+
+.hero-description {
+    max-width: 520px;
+
+    margin: 2rem auto 0;
+
+    font-size: 1.05rem;
+    line-height: 1.7;
+
+    color: #5d685f;
+}
+
+
+/* =========================================
+   HERO LINKS
+   ========================================= */
+
+.hero-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1.5rem;
+
+    margin-top: 2rem;
+}
+
+.primary-button {
+    display: inline-block;
+
+    padding: 0.8rem 1.25rem;
+
+    background: #354238;
+
+    color: #f7f5ef;
+
+    border-radius: 999px;
+
+    text-decoration: none;
+
+    font-size: 0.85rem;
+    font-weight: 500;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.primary-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(53, 66, 56, 0.18);
+}
+
+.hero .text-link {
+    color: #354238;
+
+    text-decoration: none;
+
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.hero .text-link:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   DECORATIVE WAVES
+   ========================================= */
+
+.hero-waves {
+    position: absolute;
+
+    left: -5%;
+    right: -5%;
+    bottom: -1px;
+
+    height: 180px;
+
+    z-index: 3;
+
+    pointer-events: none;
+}
+
+.wave {
+    position: absolute;
+
+    left: -5%;
+    width: 110%;
+
+    height: 150px;
+
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+
+    transform-origin: center bottom;
+}
+
+
+/* Back wave */
+
+.wave-one {
+    bottom: -95px;
+
+    background: rgba(247, 245, 239, 0.45);
+
+    transform: rotate(-2deg);
+}
+
+
+/* Middle wave */
+
+.wave-two {
+    bottom: -115px;
+
+    background: rgba(247, 245, 239, 0.7);
+
+    transform: rotate(2deg);
+}
+
+
+/* Front wave */
+
+.wave-three {
+    bottom: -135px;
+
+    background: #f7f5ef;
+
+    transform: rotate(-1deg);
+}
